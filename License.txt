@@ -1,0 +1,4 @@
+User interface sources (MainUI folder) and other utils are licensed GNU GPL v2
+Serune Kalee Core Engine (SeruneEngine folder) are licensed under GNU LGPL
+Other supplyring resources are licensed under Creative Commons v3.0 BY
+Third-parties are have their owns license agreements. See on MainUI/about.txt for information

@@ -1,0 +1,71 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d6c7f5c7-8b55-485c-a8fb-147b2e10e2c5}</ProjectGuid>
+    <MainSource>Serunee.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\Serunee.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>../</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_ResourcePath>
+    <DCC_ObjPath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_ObjPath>
+    <DCC_IncludePath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>../</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_ResourcePath>
+    <DCC_ObjPath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_ObjPath>
+    <DCC_IncludePath>../SeruneEngine;../ScaleMM2;../PNGImage;../DxHeader;../OpenAL</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="RunParams">D:\Dokumen\123.skt</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">1</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">428</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Revolven Technologies</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Serune Kalee Simulator</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.1.0.428</VersionInfoKeys><VersionInfoKeys Name="InternalName">Serune Kalee</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright © Revolven Technologies 2014</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">Serunee.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">Serune Kalee Simulator</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0</VersionInfoKeys><VersionInfoKeys Name="Comments">Coded by Faris Khowarizmi</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Serunee.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Serunee.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\SeruneEngine\SrneeConst.pas" />
+    <DCCReference Include="..\SeruneEngine\SrneeProcs.pas" />
+    <DCCReference Include="..\SeruneEngine\SrneeTypes.pas" />
+    <DCCReference Include="AppConst.pas" />
+    <DCCReference Include="AppStrings.pas" />
+    <DCCReference Include="KeybdConst.pas" />
+    <DCCReference Include="Tambahan.pas" />
+    <DCCReference Include="uAbout.pas">
+      <Form>frmAbout</Form>
+    </DCCReference>
+    <DCCReference Include="uKeySet.pas">
+      <Form>frmKeymap</Form>
+    </DCCReference>
+    <DCCReference Include="uMain.pas">
+      <Form>frmMain</Form>
+    </DCCReference>
+    <DCCReference Include="uPref.pas">
+      <Form>frmPref</Form>
+    </DCCReference>
+    <DCCReference Include="uSplash.pas">
+      <Form>frmSplash</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>

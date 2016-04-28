@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="SaveType" value=" ">
+	<param name="SaveTypeDesc" value=" ">
+	<param name="Window Styles" value="0x800025">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bantuan Serune Kalee Simulator">
+		<param name="Local" value="home.html">
+		<param name="ImageNumber" value="9">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Konten">
+		<param name="ImageNumber" value="2">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tentang program">
+			<param name="Local" value="aboutp.html">
+			<param name="ImageNumber" value="9">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Kebutuhan sistem">
+			<param name="Type" value=" ">
+			<param name="Local" value="sysreq.html">
+			<param name="ImageNumber" value="41">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Petunjuk penggunaan">
+			<param name="Type" value=" ">
+			<param name="Local" value="hints.html">
+			<param name="ImageNumber" value="21">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Permasalahan yang diketahui">
+			<param name="Type" value=" ">
+			<param name="Local" value="kissues.html">
+			<param name="ImageNumber" value="35">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pertanyaan dan Jawaban (FAQ)">
+			<param name="Local" value="faq.html">
+			<param name="ImageNumber" value="38">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Informasi dan referensi">
+			<param name="Local" value="info.html">
+			<param name="ImageNumber" value="17">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Antarmuka Program">
+		<param name="ImageNumber" value="2">
+		</OBJECT>
+</UL>
+</BODY></HTML>

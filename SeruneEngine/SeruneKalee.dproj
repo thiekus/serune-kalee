@@ -1,0 +1,56 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{74105539-89b1-4f12-8490-8a2bfeeb3c43}</ProjectGuid>
+    <MainSource>SeruneKalee.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\SeruneKalee.dll</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>../</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../ScaleMM2;../OpenAL;../DxHeader</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../ScaleMM2;../OpenAL;../DxHeader</DCC_ResourcePath>
+    <DCC_ObjPath>../ScaleMM2;../OpenAL;../DxHeader</DCC_ObjPath>
+    <DCC_IncludePath>../ScaleMM2;../OpenAL;../DxHeader</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>../</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../ScaleMM2;../OpenAL;../DxHeader</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../ScaleMM2;../OpenAL;../DxHeader</DCC_ResourcePath>
+    <DCC_ObjPath>../ScaleMM2;../OpenAL;../DxHeader</DCC_ObjPath>
+    <DCC_IncludePath>../ScaleMM2;../OpenAL;../DxHeader</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="HostApplication">D:\SeruneKalee\v1_0\Serunee.exe</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">1</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">430</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Revolven Technologies</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Serune Kalee Engine Library</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.1.0.430</VersionInfoKeys><VersionInfoKeys Name="InternalName">SeruneKalee</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright © Revolven Technologies 2014</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">SeruneKalee.dll</VersionInfoKeys><VersionInfoKeys Name="ProductName">Serune Kalee Engine</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.1</VersionInfoKeys><VersionInfoKeys Name="Comments">Coded by Faris Khowarizmi</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">SeruneKalee.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="SeruneKalee.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="SrneeAudio.pas" />
+    <DCCReference Include="SrneeConst.pas" />
+    <DCCReference Include="SrneeCore.pas" />
+    <DCCReference Include="SrneeFile.pas" />
+    <DCCReference Include="SrneeInput.pas" />
+    <DCCReference Include="SrneeMsg.pas" />
+    <DCCReference Include="SrneeTypes.pas" />
+  </ItemGroup>
+</Project>

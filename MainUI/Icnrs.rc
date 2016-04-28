@@ -1,0 +1,11 @@
+SHLICON ICON FileIcon.ico
+MICO_00 RCDATA glyphs\00.png
+MICO_01 RCDATA glyphs\01.png
+MICO_02 RCDATA glyphs\02.png
+MICO_03 RCDATA glyphs\03.png
+MICO_04 RCDATA glyphs\04.png
+MICO_05 RCDATA glyphs\05.png
+MICO_06 RCDATA glyphs\06.png
+MICO_07 RCDATA glyphs\07.png
+MICO_08 RCDATA glyphs\08.png
+MICO_09 RCDATA glyphs\09.png

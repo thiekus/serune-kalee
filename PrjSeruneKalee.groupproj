@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{b0de4805-9405-4dc0-a906-192206f09817}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="MainUI\Serunee.dproj" />
+    <Projects Include="SeruneEngine\SeruneKalee.dproj" />
+    <Projects Include="ShellRegist\SKShlReg.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Serunee">
+    <MSBuild Projects="MainUI\Serunee.dproj" Targets="" />
+  </Target>
+  <Target Name="Serunee:Clean">
+    <MSBuild Projects="MainUI\Serunee.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Serunee:Make">
+    <MSBuild Projects="MainUI\Serunee.dproj" Targets="Make" />
+  </Target>
+  <Target Name="SeruneKalee">
+    <MSBuild Projects="SeruneEngine\SeruneKalee.dproj" Targets="" />
+  </Target>
+  <Target Name="SeruneKalee:Clean">
+    <MSBuild Projects="SeruneEngine\SeruneKalee.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="SeruneKalee:Make">
+    <MSBuild Projects="SeruneEngine\SeruneKalee.dproj" Targets="Make" />
+  </Target>
+  <Target Name="SKShlReg">
+    <MSBuild Projects="ShellRegist\SKShlReg.dproj" Targets="" />
+  </Target>
+  <Target Name="SKShlReg:Clean">
+    <MSBuild Projects="ShellRegist\SKShlReg.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="SKShlReg:Make">
+    <MSBuild Projects="ShellRegist\SKShlReg.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Serunee;SeruneKalee;SKShlReg" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Serunee:Clean;SeruneKalee:Clean;SKShlReg:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Serunee:Make;SeruneKalee:Make;SKShlReg:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

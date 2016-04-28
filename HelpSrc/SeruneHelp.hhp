@@ -1,0 +1,22 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\SeruneHelp.chm
+Contents file=toc.hhc
+Default Font=Tahoma,8,0
+Default topic=home.html
+Display compile progress=Yes
+Language=0x421 Indonesian
+Title=Serune Kalee Simulator Help
+
+
+[FILES]
+aboutp.html
+faq.html
+hints.html
+home.html
+info.html
+kissues.html
+sysreq.html
+
+[INFOTYPES]
+
